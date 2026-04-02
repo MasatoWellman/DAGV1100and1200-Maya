@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: room101.ma
-//Last modified: Thu, Mar 26, 2026 03:24:24 PM
+//Last modified: Thu, Mar 26, 2026 04:14:30 PM
 //Codeset: 1252
 file -rdi 1 -ns "cup121" -rfn "cup121RN" -op "v=0;" -typ "mayaAscii" "C:/DAGV1100and1200-Maya/DAGV1100and1200/Maya//scenes/cup121.ma";
 file -rdi 1 -ns "Table1" -rfn "TableRN" -op "v=0;" -typ "mayaAscii" "C:/DAGV1100and1200-Maya/DAGV1100and1200/Maya//scenes/Table.ma";
@@ -33,18 +33,18 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202510291147-60ec9eda33";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "544CB98F-48B2-2864-7A5D-DF98712D0E1A";
+fileInfo "UUID" "02864C17-488D-DD0B-C532-4D9E8B153BDB";
 createNode transform -s -n "persp";
 	rename -uid "2A88E71C-4939-8EB5-A9D7-EEB646A879AC";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 29.106553461666611 19.590589928317527 25.154525704549069 ;
-	setAttr ".r" -type "double3" -19.800000000001109 45.200000000000038 1.1284417632901485e-15 ;
+	setAttr ".t" -type "double3" 20.674350561881013 23.348488182078338 32.563093723321266 ;
+	setAttr ".r" -type "double3" -23.400000000002617 32.000000000001492 -9.3761034777351247e-16 ;
 	setAttr ".rpt" -type "double3" 2.3810539181545814e-15 5.7558436512053655e-17 2.678620892194585e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "A8B84CCD-46D9-596E-79B6-EBB0BC8750EC";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 51.556006282893264;
+	setAttr ".coi" 53.435692593658978;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -4887,7 +4887,7 @@ createNode mesh -n "Sofa12:pCube1Shape" -p "Sofa12:pCube1";
 	setAttr ".dr" 2;
 	setAttr ".dsm" 1;
 createNode fosterParent -n "bookshelf202RNfosterParent1";
-	rename -uid "61F5E00B-470E-A907-7955-E6B17632B672";
+	rename -uid "A3256264-4C52-8B31-D66B-4BB18221D0B5";
 createNode mesh -n "bookshelf203" -p "bookshelf202RNfosterParent1";
 	rename -uid "E6EC90C2-4B7F-19AA-39B6-7DAABACB39FD";
 	setAttr -k off ".v";
@@ -6120,20 +6120,20 @@ createNode mesh -n "bookshelf203" -p "bookshelf202RNfosterParent1";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "76A93D89-46FA-AB64-5D8E-AC8782D8780F";
-	setAttr -s 8 ".lnk";
-	setAttr -s 8 ".slnk";
+	rename -uid "1433BE0F-45F0-7321-1CD4-6188AF9082A1";
+	setAttr -s 7 ".lnk";
+	setAttr -s 7 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "D26BA897-459E-BB99-AA47-2783591E9867";
+	rename -uid "78FB0A11-42C0-9E81-AFA2-0E8369080126";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "DF8FF7C0-4E71-E166-6B55-BF99830C8A4F";
+	rename -uid "E5217E00-4B11-9C78-764C-49A2DE5CEEB3";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "8D4F235E-4AD0-FA0F-2DFD-B6B507684B85";
+	rename -uid "F98542DD-4FE4-647E-8D5A-7D8A0139964B";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "C83BCAA0-447E-1B60-15A9-B6A56C9D537E";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "F571159A-4131-0617-5974-F6BD1A6FCC84";
+	rename -uid "7CF2B5E6-4F00-BD57-A1AF-5F9C585CA7AA";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "B22C9F74-403D-B92F-9FCE-C9868AEF71A2";
 	setAttr ".g" yes;
@@ -6544,20 +6544,9 @@ createNode reference -n "pottedplant121RN";
 		" -type \"double3\" 0 82.89812425159338716 0"
 		2 "|pottedplant121:group5_pasted__group_pasted__pasted__loftedSurface1" "rotatePivotTranslate" 
 		" -type \"double3\" 0 0 0"
-		"pottedplant121RN" 31
-		2 "|pottedplant121:revolvedSurface1" "scale" " -type \"double3\" 1 1 1"
-		2 "|pottedplant121:revolvedSurface1" "scaleX" " -av"
-		2 "|pottedplant121:revolvedSurface1" "scaleY" " -av"
-		2 "|pottedplant121:revolvedSurface1" "scaleZ" " -av"
-		2 "|pottedplant121:revolvedSurface2" "scale" " -type \"double3\" 1 1 1"
-		2 "|pottedplant121:revolvedSurface2" "scaleX" " -av"
-		2 "|pottedplant121:revolvedSurface2" "scaleY" " -av"
-		2 "|pottedplant121:revolvedSurface2" "scaleZ" " -av"
+		"pottedplant121RN" 21
 		2 "|pottedplant121:loftedSurface2" "translate" " -type \"double3\" -9.97643878494755931 -5.2371739443598635 -9.16021750538758717"
 		
-		2 "|pottedplant121:loftedSurface2" "rotate" " -type \"double3\" 0 113.95264670336335655 0"
-		
-		2 "|pottedplant121:loftedSurface2" "rotateY" " -av"
 		2 "|pottedplant121:loftedSurface2" "scale" " -type \"double3\" 0.19514637158490714 0.39029274316981427 0.19514637158490714"
 		
 		2 "|pottedplant121:loftedSurface2" "rotatePivotTranslate" " -type \"double3\" 0 0 0"
@@ -6573,6 +6562,8 @@ createNode reference -n "pottedplant121RN";
 		2 "pottedplant121:groupParts7" "groupId" " 163"
 		3 "pottedplant121:groupId13.message" ":initialShadingGroup.groupNodes" "-na"
 		
+		3 "pottedplant121:groupId13.groupId" "pottedplant121:groupParts7.groupId" 
+		""
 		3 "pottedplant121:groupParts7.outputGeometry" "|pottedplant121:loftedSurface2|pottedplant121:loftedSurface2Shape.inMesh" 
 		""
 		3 "pottedplant121:groupId13.groupId" "|pottedplant121:loftedSurface2|pottedplant121:loftedSurface2Shape.instObjGroups.objectGroups[0].objectGroupId" 
@@ -6585,8 +6576,6 @@ createNode reference -n "pottedplant121RN";
 		""
 		3 "|pottedplant121:loftedSurface2|pottedplant121:loftedSurface2Shape.compInstObjGroups.compObjectGroups[0]" 
 		":initialShadingGroup.dagSetMembers" "-na"
-		3 "pottedplant121:groupId13.groupId" "pottedplant121:groupParts7.groupId" 
-		""
 		5 4 "pottedplant121RN" "|pottedplant121:loftedSurface2|pottedplant121:loftedSurface2Shape.inMesh" 
 		"pottedplant121RN.placeHolderList[1]" ""
 		5 3 "pottedplant121RN" "|pottedplant121:loftedSurface2|pottedplant121:loftedSurface2Shape.instObjGroups" 
@@ -6767,7 +6756,6 @@ createNode reference -n "lAMP_1RN";
 		
 		2 "lAMP_2:groupParts1" "groupId" " 170"
 		2 "lAMP_2:polySmartExtrude1" "defaultGroupId" " 170"
-		3 "lAMP_2:groupId8.message" ":initialShadingGroup.groupNodes" "-na"
 		3 "lAMP_2:polyTweakUV6.output" "|lAMP_2:lamp|lAMP_2:lampShape.inMesh" ""
 		3 "lAMP_2:groupId8.groupId" "|lAMP_2:lamp|lAMP_2:lampShape.instObjGroups.objectGroups[0].objectGroupId" 
 		""
@@ -6775,8 +6763,9 @@ createNode reference -n "lAMP_1RN";
 		""
 		3 "|lAMP_2:lamp|lAMP_2:lampShape.instObjGroups.objectGroups[0]" ":initialShadingGroup.dagSetMembers" 
 		"-na"
-		3 "lAMP_2:groupId8.groupId" "lAMP_2:polySmartExtrude1.defaultGroupId" ""
+		3 "lAMP_2:groupId8.message" ":initialShadingGroup.groupNodes" "-na"
 		3 "lAMP_2:groupId8.groupId" "lAMP_2:groupParts1.groupId" ""
+		3 "lAMP_2:groupId8.groupId" "lAMP_2:polySmartExtrude1.defaultGroupId" ""
 		5 3 "lAMP_1RN" "|lAMP_2:lamp|lAMP_2:lampShape.instObjGroups" "lAMP_1RN.placeHolderList[1]" 
 		""
 		5 0 "lAMP_1RN" "lAMP_2:polyTweakUV6.output" "|lAMP_2:lamp|lAMP_2:lampShape.inMesh" 
@@ -6795,14 +6784,14 @@ createNode reference -n "pillow111RN";
 		2 "pillow112:pillow:groupParts1" "inputRemoveComponent" " -type \"componentList\" 1 \"f[0:2359]\""
 		
 		2 "pillow112:pillow:groupParts1" "groupId" " 453"
-		3 "|pillow112:pillow:pCube1|pillow112:pillow:pCube1Shape.instObjGroups.objectGroups[0]" 
-		"pillow112:pillow:initialShadingGroup.dagSetMembers" "-na"
-		3 "pillow112:pillow:groupId1.message" "pillow112:pillow:initialShadingGroup.groupNodes" 
-		"-na"
 		3 "pillow112:pillow:groupId1.groupId" "|pillow112:pillow:pCube1|pillow112:pillow:pCube1Shape.instObjGroups.objectGroups[0].objectGroupId" 
 		""
 		3 "pillow112:pillow:initialShadingGroup.memberWireframeColor" "|pillow112:pillow:pCube1|pillow112:pillow:pCube1Shape.instObjGroups.objectGroups[0].objectGrpColor" 
 		""
+		3 "|pillow112:pillow:pCube1|pillow112:pillow:pCube1Shape.instObjGroups.objectGroups[0]" 
+		"pillow112:pillow:initialShadingGroup.dagSetMembers" "-na"
+		3 "pillow112:pillow:groupId1.message" "pillow112:pillow:initialShadingGroup.groupNodes" 
+		"-na"
 		3 "pillow112:pillow:groupId1.groupId" "pillow112:pillow:groupParts1.groupId" 
 		""
 		5 3 "pillow111RN" "|pillow112:pillow:pCube1|pillow112:pillow:pCube1Shape.instObjGroups" 
@@ -7181,7 +7170,7 @@ createNode lambert -n "lambert4";
 createNode shadingEngine -n "lambert4SG";
 	rename -uid "FE54C866-4840-E1FC-D173-3D9877839255";
 	setAttr ".ihi" 0;
-	setAttr -s 11 ".dsm";
+	setAttr -s 10 ".dsm";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo4";
 	rename -uid "48BDA9B9-4AE9-621E-D4E0-F9811BC85532";
@@ -7791,9 +7780,9 @@ connectAttr "Sofa12:place2dTexture1.ofs" "Sofa12:file1.fs";
 connectAttr ":defaultArnoldDenoiser.msg" ":defaultArnoldRenderOptions.imagers" -na
 		;
 connectAttr "Colors_2.oc" "lambert4.c";
-connectAttr "lambert4.oc" "lambert4SG.ss";
 connectAttr "room.iog" "lambert4SG.dsm" -na;
 connectAttr "Sofa12:pCube1Shape.iog" "lambert4SG.dsm" -na;
+connectAttr "lambert4.oc" "lambert4SG.ss";
 connectAttr "lambert4SG.msg" "materialInfo4.sg";
 connectAttr "lambert4.msg" "materialInfo4.m";
 connectAttr "Colors_2.msg" "materialInfo4.t" -na;
